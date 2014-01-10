@@ -374,7 +374,7 @@ pre, code, tt {
 	font-family: Consolas, "Liberation Mono", Courier, monospace;
 }
 
-div.wiki {
+.controller-documents div.wiki {
 	margin-bottom: 30px;
 	padding: 10px;
 	box-shadow: #bbb 0 1px 1px 1px;
