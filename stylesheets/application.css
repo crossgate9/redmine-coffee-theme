@@ -363,6 +363,13 @@ pre, code, tt {
 	font-family: Consolas, "Liberation Mono", Courier, monospace;
 }
 
+div.wiki {
+	margin-bottom: 30px;
+	padding: 10px;
+	box-shadow: #bbb 0 1px 1px 1px;
+	overflow: hidden;
+}
+
 div.wiki.wiki-page {
 	font-size: 14px;
 	line-height: 1.6;
