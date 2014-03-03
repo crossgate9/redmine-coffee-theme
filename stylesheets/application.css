@@ -1182,9 +1182,6 @@ div.feature .feature-content h2 {
 	font-family: "proxima-nova", arial, sans-serif;
 }
 
-/***************************************************************************************/
-
-
 div#footer a:hover {
 	color: #222;
 	text-decoration: none;
@@ -1194,19 +1191,4 @@ div#footer a:hover {
 #main-menu li a:not(.selected):hover {
 	color: #008cdd;
 }
-
-
-
-/*Redmine*/
-
-/*#top-menu {
-background: #6B96C9 url(../images/bg-ovelay.png) repeat-x scroll 0 0;
-border: 1px solid #507AAA;
-border-bottom: 1px solid #27507E;
-	}
-*/
-
-
-
-
 
