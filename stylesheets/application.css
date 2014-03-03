@@ -40,12 +40,9 @@ body {
 	background: transparent;
 	margin: 20px auto;
 	max-width: 1240px;
+        width: 90%;
 }
 
-
-#wrapper2 {
-	margin: 0px 20px;
-}
 
 /* apple style blue menu*/
 #top-menu {
@@ -114,9 +111,8 @@ body {
 
 div#content {
 	padding-top: 20px;
-	margin-right: 25%;
 	margin-bottom: 5px;
-	width: auto;
+	width: 70%;
 	background: #FAFAFA;
 }
 
@@ -155,6 +151,7 @@ div#content {
 
 #sidebar {
 	/*font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;*/
+        width: 20%;
 	padding-right: 10px;
 	overflow-x: hidden;
 	border-top: 1px solid #DDD;
