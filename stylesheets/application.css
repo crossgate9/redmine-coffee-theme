@@ -34,6 +34,7 @@ body {
 	color: #404040;
 	font-weight: normal;
 	margin: 0;
+	min-width: 0;
 }
 
 #wrapper {
@@ -561,9 +562,7 @@ input.autocomplete {
 	border-radius: 5px;
 }
 
-.action-login #main {
-	margin: 0 170px;
-}
+.action-login #main { margin: 0 auto; }
 
 /*Roadmap*/
 
