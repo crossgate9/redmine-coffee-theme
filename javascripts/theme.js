@@ -64,6 +64,48 @@
 
     }
   });
+ 
+  (function($) {
+    $(function() {
+      var loadScript = function(url, callback) {
+        var script = document.createElement('script');
+	script.type = 'text/javascript';
+
+	if (script.readyState) {
+	  script.onreadystatechange = function() {
+	    if (script.readState === 'loaded' || script.readState === 'complete') {
+	      script.onreadystatechange = null;
+	      callback();
+	    }
+	  };
+	} else {
+	  script.onload = function() {
+	    callback();
+	  };
+	}
+
+	script.src = url;
+	document.getElementsByTagName('head')[0].appendChild(script);
+      };
+      loadScript('/themes/coffee/javascripts/vein.js', function() {
+        $('table').each(function(idx, val) {
+	  var $table = $(this);
+	  if ($table.hasClass('list') === true) {
+	    var $head = $table.find('thead th'),
+	        count = 0;
+	    $head.each(function(idx, column) {
+	      var selector = '.list.issues tbody td:nth-of-type(' + (idx+1) + '):before';
+	      vein.inject([{
+	        '@media (max-width: 768px)': [selector]
+	      }], {
+	        'content': "'" + $(column).find('a').html() + "'",
+	      });
+	    });
+	  }
+	});
+      });
+    });
+  })(jQuery);
 } else {
   document.observe("dom:loaded", function() {
     if (window.devicePixelRatio > 1) {
